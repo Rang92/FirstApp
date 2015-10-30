@@ -21,15 +21,12 @@ public class MainActivity extends AppCompatActivity {
     public void pressSend(View v) {
         EditText name = (EditText)findViewById(R.id.nameID);
         EditText age = (EditText)findViewById(R.id.ageID);
-
         Toast yourToast = Toast.makeText(getApplicationContext(), name.getText() + " is " + age.getText() + " years old!", LENGTH_LONG);
         yourToast.show();
     }
 
     public void pressWWT(View v) {
         EditText name = (EditText)findViewById(R.id.nameID);
-
-
         EditText ageText = (EditText)findViewById(R.id.ageID);
         int age = Integer.parseInt(ageText.getText().toString());
 
